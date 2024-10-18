@@ -1,1 +1,0 @@
-# ruizmoralesyaret.github.com
