@@ -1,0 +1,400 @@
+<html>
+    <head>
+        <title>Tablas en html</title>
+        <link rel="stylesheet" href="../css/style.page.css" type="text/css">
+        <style type="text/css">
+            #tabla_uno{
+                width: 80%;
+                text-align: center;
+                margin: 0 auto;
+                color:#f7f1e1;
+                border-style: solid;
+                border-spacing: 10px;
+                /*border-color: crimson;
+                border-width: 5px;
+                */
+            }
+            #tabla_uno th{
+                background-color: #855e6e;
+                padding: 20px;
+                text-align: center;
+                border: 2px solid #ffb2c1;
+            }
+            #tabla_uno td{
+                background-color: #ffb2c1;
+                color: #f7f1e1;
+                text-align: left;
+                border-style: solid;
+                border-color: #855e6e;
+                border-width: 3px;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;
+            }
+            /*#tabla_2{
+                color: #f7f1e1;
+            }
+            #tabla_2 td{
+                color: #f7f1e1;
+                height: 50px;
+                padding: 5px;
+            }*/
+            
+            .tabla_dos{
+                width: 700px;
+                border-collapse: collapse;
+                border-color:#f7f1e1; 
+                color: #f7f1e1;
+                border-style:solid;
+                margin: 0 auto;
+            }
+            .tabla_dos td, .tabla_dos th{
+                /*width: 150px;*/
+                border-color:#f7f1e1; 
+                color: #f7f1e1; 
+                padding: 10px;
+                border-style: dashed;
+            }
+            .tabla_dos th{
+                background-color: #855e6e;
+            }
+            .tabla_dos td{
+                background-color: #ffb2c1;
+            }
+            .celda_centrada {
+                text-align: center;
+                padding: 0px;
+                background-color:#855e6e;
+            }
+            #tabla_zebra{
+                width: 100%;
+                padding: 20px; 
+            }
+            #tabla_zebra th{
+                padding: 20px;
+            }
+            #tabla_zebra td{
+                padding: 10px;
+            }
+            #tabla_zebra tbody tr:nth-child(even){
+                background-color: #ffb2c1;
+                color: #855e6e;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color: #855e6e;
+                color: #f7f1e1;
+            }
+            #tabla_zebra thead tr{
+                background-color: beige;
+            }
+            .tabla_hover{
+                width: 80%;
+                margin: 0 auto;
+                color: #f7f1e1;
+                border-collapse: collapse;
+            } 
+            .tabla_hover tr th{
+                background-color: #855e6e;
+                padding: 20px;
+                border: 2px solid #855e6e;
+            }
+            .tabla_hover tr{
+                background-color:#ffb2c1;
+                padding: 10px;
+                border: 2px solid #855e6e;
+            }
+            .tabla_hover tr td{
+                border: 5px solid #855e6e;
+                padding: 10px;
+            }
+            .tabla_hover tbody tr:hover{
+               background-color:beige;
+                color: #855e6e;  
+            }
+            .centrar{
+                text-align: center;
+            }
+            p{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>TABLAS EN HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="">Listas</a></li>
+                <li><a href="">Enlaces</a></li>
+                <li><a href="">Imagen</a></li>
+                <li><a href="">Audio</a></li>
+                <li><a href="">Video</a></li>
+                <li><a href="">Tablas</a></li>
+                <li><a href="">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="overflow-x: auto">
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat eu velit non condimentum. Donec bibendum id nibh semper cursus. Vivamus dictum hendrerit nisi, vel aliquam ipsum imperdiet eu. Nunc eget venenatis justo. Ut quam magna, condimentum egestas nibh fringilla, molestie mattis felis. Fusce nec diam lorem. Aliquam sit amet laoreet diam, vel elementum turpis. Ut pulvinar, elit ut elementum aliquam, nisi turpis varius sapien, sed tincidunt mi tortor vitae urna. Proin fringilla vitae enim ut ullamcorper. Praesent commodo lorem venenatis, tincidunt dolor eu, sollicitudin nulla. Mauris a velit at neque consectetur aliquam sit amet eget turpis. Donec finibus vitae enim in venenatis. Integer sit amet placerat eros. Proin eget mauris a justo tristique cursus quis ut neque. Curabitur a massa est. Vivamus imperdiet sapien in dui ultrices hendrerit.</p>
+                <table border="1" id="tabla_uno">
+                    <thead>
+                        <tr>
+                            <th>Matricula</th>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Colegio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202156983</td>  
+                            <td>Jose Luis</td>
+                            <td>Torres</td>
+                            <td>Diaz</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202265985</td>
+                            <td>Maria Fernanda</td>
+                            <td>Gonzalez</td>
+                            <td>Alvares</td>
+                            <td>Urbano</td>
+                        </tr>
+                        <tr>
+                            <td>2021542368</td>
+                            <td>Daniel</td>
+                            <td>Mendoza</td>
+                            <td>Dominguez</td>
+                            <td>Gráfico</td>
+                        </tr>
+                        <tr>
+                            <td>202358658</td>
+                            <td>Ximena</td>
+                            <td>Salazar</td>
+                            <td>Paredes</td>
+                            <td>Urbano</td>
+                        </tr>
+                        <tr>
+                            <td>202463632</td>
+                            <td>Fabiola</td>
+                            <td>Diaz</td>
+                            <td>Perez</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202155647</td>
+                            <td>Graciela</td>
+                            <td>Pliego</td>
+                            <td>Mendoza</td>
+                            <td>Gráfico</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat eu velit non condimentum. Donec bibendum id nibh semper cursus. Vivamus dictum hendrerit nisi, vel aliquam ipsum imperdiet eu. Nunc eget venenatis justo. Ut quam magna, condimentum egestas nibh fringilla, molestie mattis felis. Fusce nec diam lorem. Aliquam sit amet laoreet diam, vel elementum turpis. Ut pulvinar, elit ut elementum aliquam, nisi turpis varius sapien, sed tincidunt mi tortor vitae urna. Proin fringilla vitae enim ut ullamcorper. Praesent commodo lorem venenatis, tincidunt dolor eu, sollicitudin nulla. Mauris a velit at neque consectetur aliquam sit amet eget turpis. Donec finibus vitae enim in venenatis. Integer sit amet placerat eros. Proin eget mauris a justo tristique cursus quis ut neque. Curabitur a massa est. Vivamus imperdiet sapien in dui ultrices hendrerit.</p>
+                <table id="tabla_2" class="tabla_dos" >
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;">Nombre</th>
+                            <th style="width: 150px;">Edad</th>
+                            <th style="width: 200px;" colspan="2">Telefono</th>
+                            <th style="width: 150px;">Cooperación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Georgina Lopez Mendoza
+                            <td style="text-align:center; padding:0px;">15</td>
+                            <td>2222565861</td>
+                            <td></td>
+                            <td style="text-align: center; padding: 0px; background-color:#855e6e;">100</td>
+                        </tr>
+                        <tr>
+                            <td>Juan</td>
+                            <td style="text-align:center; padding:0px;">14</td>
+                            <td>2226989658</td>
+                            <td>2227563652</td>
+                            <td style="text-align: center; padding: 0px; background-color:#855e6e;">50</td>
+                        </tr>
+                        <tr>
+                            <td>Maria del Carmen Hernandez Perez</td>
+                            <td style="text-align:center; padding:0px;">13</td>
+                            <td>2222589632</td>
+                            <td>2227563652</td>
+                            <td style="text-align: center; padding: 0px; background-color:#855e6e;">150</td>
+                        </tr>
+                        <tr>
+                            <td>Felipe Juarez Lopez</td>
+                            <td style="text-align:center; padding:0px;">14</td>
+                            <td></td>
+                            <td>2227563652</td>
+                            <td style="text-align: center; padding: 0px; background-color:#855e6e;">80</td>
+                        </tr>
+                        <tr>
+                            <td>Aaron Suarez Mejia</td>
+                            <td style="text-align:center; padding:0px;">13</td>
+                            <td>2222541258</td>
+                            <td>2227563652</td>
+                            <td style="text-align: center; padding: 0px; background-color:#855e6e;">100</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                            <td class="celda_centrada" style="background-color:darkslateblue; color:aliceblue;">480</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto;">
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat eu velit non condimentum. Donec bibendum id nibh semper cursus. Vivamus dictum hendrerit nisi, vel aliquam ipsum imperdiet eu. Nunc eget venenatis justo. Ut quam magna, condimentum egestas nibh fringilla, molestie mattis felis. Fusce nec diam lorem. Aliquam sit amet laoreet diam, vel elementum turpis. Ut pulvinar, elit ut elementum aliquam, nisi turpis varius sapien, sed tincidunt mi tortor vitae urna. Proin fringilla vitae enim ut ullamcorper. Praesent commodo lorem venenatis, tincidunt dolor eu, sollicitudin nulla. Mauris a velit at neque consectetur aliquam sit amet eget turpis. Donec finibus vitae enim in venenatis. Integer sit amet placerat eros. Proin eget mauris a justo tristique cursus quis ut neque. Curabitur a massa est. Vivamus imperdiet sapien in dui ultrices hendrerit.</p>
+                <table id="tabla_zebra" >
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lourdes Diaz Salamanca</td>
+                            <td>19</td>
+                            <td>Football</td>
+                            <td>2226987523</td>
+                            <td>lulu.diaz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jose Luis Perez Dominguez</td>
+                            <td>21</td>
+                            <td>Voleiball</td>
+                            <td>2226987523</td>
+                            <td>guicho_21@hotmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Pablo Mendez Cabrera</td>
+                            <td>19</td>
+                            <td>Football</td>
+                            <td>2225639656</td>
+                            <td>pablo_start@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mariana Gonzalez Gonzalez</td>
+                            <td>20</td>
+                            <td>Natación</td>
+                            <td>2225632563</td>
+                            <td>mariana.gonzalez@yahoo.com</td>
+                        </tr>
+                        <tr>
+                            <td>Graciela Hernandez Perez</td>
+                            <td>21</td>
+                            <td>Karate</td>
+                            <td>2226963263</td>
+                            <td>grace_linda@yahoo.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jose Fernandez Jimenez</td>
+                            <td>20</td>
+                            <td>Football</td>
+                            <td>22269656632</td>
+                            <td>pepe.fer@hotmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Monserrat Camacho Gomez</td>
+                            <td>21</td>
+                            <td>Karate</td>
+                            <td>2222566326</td>
+                            <td>monse_camacho@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto;">
+                <h2>Tabla</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat eu velit non condimentum. Donec bibendum id nibh semper cursus. Vivamus dictum hendrerit nisi, vel aliquam ipsum imperdiet eu. Nunc eget venenatis justo. Ut quam magna, condimentum egestas nibh fringilla, molestie mattis felis. Fusce nec diam lorem. Aliquam sit amet laoreet diam, vel elementum turpis. Ut pulvinar, elit ut elementum aliquam, nisi turpis varius sapien, sed tincidunt mi tortor vitae urna. Proin fringilla vitae enim ut ullamcorper. Praesent commodo lorem venenatis, tincidunt dolor eu, sollicitudin nulla. Mauris a velit at neque consectetur aliquam sit amet eget turpis. Donec finibus vitae enim in venenatis. Integer sit amet placerat eros. Proin eget mauris a justo tristique cursus quis ut neque. Curabitur a massa est. Vivamus imperdiet sapien in dui ultrices hendrerit.</p>
+                <table id="" class="tabla_hover" >
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lourdes Diaz Salamanca</td>
+                            <td class="centrar">19</td>
+                            <td class="centrar">Football</td>
+                            <td class="centrar">2226987523</td>
+                            <td>lulu.diaz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jose Luis Perez Dominguez</td>
+                            <td class="centrar">21</td>
+                            <td class="centrar">Voleiball</td>
+                            <td class="centrar">2226987523</td>
+                            <td>guicho_21@hotmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Pablo Mendez Cabrera</td>
+                            <td class="centrar">19</td>
+                            <td class="centrar">Football</td>
+                            <td class="centrar">2225639656</td>
+                            <td>pablo_start@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mariana Gonzalez Gonzalez</td>
+                            <td class="centrar">20</td>
+                            <td class="centrar">Natación</td>
+                            <td class="centrar">2225632563</td>
+                            <td>mariana.gonzalez@yahoo.com</td>
+                        </tr>
+                        <tr>
+                            <td>Graciela Hernandez Perez</td>
+                            <td class="centrar">21</td>
+                            <td class="centrar">Karate</td>
+                            <td class="centrar">2226963263</td>
+                            <td>grace_linda@yahoo.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jose Fernandez Jimenez</td>
+                            <td class="centrar">20</td>
+                            <td class="centrar">Football</td>
+                            <td class="centrar">22269656632</td>
+                            <td>pepe.fer@hotmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Monserrat Camacho Gomez</td>
+                            <td class="centrar">21</td>
+                            <td class="centrar">Karate</td>
+                            <td class="centrar">2222566326</td>
+                            <td>monse_camacho@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            
+        </main>
+        <footer>
+            <h5>Elaborado por Yaret E. Ruiz Morales</h5>
+        </footer>
+    </body>
+</html>

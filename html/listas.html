@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <title>Listas</title>
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        header,nav,main,footer{
+            width: 960px;
+            color: azure;
+            padding: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        header{
+            /*width: 1280px;*/
+            height: 150px;
+            background-color: #EF5A6F;
+            /*color: azure;*/
+        }
+        nav{
+            background-color:dodgerblue;
+        }
+        main{
+            background-color: cornflowerblue;
+        }
+        footer{
+            background-color: darkblue;
+        }
+        section{
+            width: 650px;
+            background-color: beige;
+            color: cornflowerblue;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+        }
+        h2,h3,p{
+            margin-bottom: 15px;
+        }
+        h1,h5{
+            text-align: center;
+        }
+        nav ul{
+           list-style-type:none;
+            text-align: center;
+        }
+        nav ul li{
+            width: 80px;
+            background-color: beige;
+            color: cornflowerblue;
+            margin-bottom: 10px;
+            padding: 10px;
+            text-align: center;
+            border-width: 3px;
+            border-color: darksalmon;
+            border-style: solid;
+            display:inline-block;
+        }
+        ul,ol{
+            padding-left: 20px;
+        }
+        dt{
+            font-weight: bolder;
+        }
+        dt,dl{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        h6{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Listas en html</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Listas</li>
+            <li>Enlaces</li>
+            <li>Tablas</li>
+            <li>Imagenes</li>
+            <li>Audio</li>
+            <li>Video</li>
+            <li>Formulario</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Lista ordenada</h2>
+            <ol type=a>
+                <li>Ariantna Sanchez</li>
+                <li>Beatriz Valades</li>
+                <li>Eduardo Pineda</li>
+                <li>Eugenia Soler </li>
+                <li>Pedro Gomez</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Lista desordenada</h2>
+            <ul>
+                <li>Seat</li>
+                <li>VW</li>
+                <li>Toyota</li>
+                <li>Renault</li>
+                <li>Suzuki</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lista mixta</h2>
+            <ol type="i">
+                <li>España</li>
+                <li>Argentina</li>
+                <li>Mexico
+                    <ul>
+                        <li>Puebla
+                            <ul>
+                                <li>Atlixco</li>
+                                <li>Cholula</li>
+                                <li>Zacatlan</li>
+                                <li>Chignahupan</li>
+                                <li>Huejotzingo</li>
+                            </ul>
+                        </li>
+                        <li>Vercruz</li>
+                        <li>Oaxaca</li>
+                        <li>Monterrey</li>
+                        <li>Jalisco</li>
+                    </ul>
+                </li>
+                <li>Estados Unidos</li>
+                <li>Italia
+                    <ul>
+                        <li>Roma</li>
+                        <li>Milan</li>
+                        <li>Verona</li>
+                        <li>Pisa</li>
+                        <li>Venecia</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Lista de conceptos</h2>
+            <dl>
+                <dt>Usabilidad</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu justo viverra, sagittis augue et, malesuada tellus. Aliquam tincidunt ligula tellus, et sollicitudin orci blandit sed. Sed elementum magna nec velit tristique consectetur. Sed placerat placerat purus, non feugiat leo aliquam eu. Aliquam pellentesque, elit non ultricies elementum, ligula arcu.</dd>
+                <dt>Accesibilidad</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus felis enim, et gravida urna semper tristique. Fusce eget nisi quis est scelerisque faucibus. Ut dictum justo ac dignissim pulvinar. Aliquam erat volutpat. Suspendisse scelerisque.</dd>
+                <dt>Interacción</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum sit amet diam eu efficitur. Proin sed libero sollicitudin, fermentum nibh in, pulvinar est. Morbi at est velit. Aenean magna magna, feugiat sed congue nec, hendrerit eu ligula. In in vestibulum metus. In et efficitur.</dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <h6>Elaborado por Yaret E. Ruiz Morales</h6>
+    </footer>
+</body>
+
+</html>

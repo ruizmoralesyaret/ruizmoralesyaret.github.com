@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rock+Salt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+header,nav,main,footer{
+    /*width: 960px;*/
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Josefin Sans";
+}
+header{
+    height: 100px;
+    background-color: #CE7095;
+    color: #f7f1e1;
+}
+nav{
+    height: 100px;
+    background-color: #ffb2c1;
+}
+main{
+    height: auto;
+    background-color: #ffdbd7;
+    padding: 80px;
+}
+section{
+    /*width: 800px;*/
+    width: 80%;
+    height: auto;
+    background-color: #CE7095;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    
+}
+footer{
+    height: 50px;
+    background-color: #855e6e;
+    color: #ffdbd7;
+}
+h1{
+    font-family:"Rock Salt", sans-serif;
+}
+h1,h5{
+    text-align: center;
+}
+ul{
+    text-align: center;
+    
+}
+ul li{
+    display: inline-block;
+    width: 10%;
+    padding: 20px;
+    background-color: #855e6e;
+    color: #f7f1e1; 
+}
+nav ul li a, nav ul li a:visited, nav ul li a:link{
+    color: #f7f1e1;
+    text-decoration:none;
+}
+nav ul li:hover{
+    background-color: #f7f1e1;
+}
+nav ul li a:hover{
+    color: #855e6e;
+}
+img{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2,p{
+    color: #f7f1e1;
+}
+h2{
+    margin-bottom: 20px;
+    font-family: "Open Sans";
+    font-size: 36px;
+    color: #ffdbd7;
+}
+#nino_oso{
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+}
+#nina_mariposa{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+main nav{
+    width: 800px;
+    padding: 30px;
+}
+#icono{
+    width: 32px;
+    height: auto;
+}
+
+p{
+    margin-bottom: 15px;
+    font-family: "Josefin Sans";
+    font-size: 18px;
+}
+
+#fondo_section{
+    background-image: url("../medios/imagenes/fondo_uno.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+     
+}
+#fondo_section p, #fondo_section h2{
+    color: #855e6e;
+}
+#filtros_imagen{
+    text-align: center;
+}
+#filtros_imagen img{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
+#img1{
+    filter: brightness(150%);}
+#img2{
+    filter: contrast(50%)
+}
+#img3{
+    filter: grayscale(100%);
+}
+#img4{
+    filter: invert(100%);
+}
+#img5{
+    filter: opacity(0.5);
+}
+#img6{
+    filter: sepia(100%);
+}
+#img7{
+    filter: saturate(150%);
+}
+#img8{
+    filter: blur(5px);
+}
+#img9{
+    filter: drop-shadow(5px 5px 10px white);
+}
+#img10{
+    filter: contrast(150%) blur(2px);
+}
+#img11{
+    filter: hue-rotate(120deg);
+}
+iframe, audio{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
